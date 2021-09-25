@@ -19,4 +19,12 @@ class Model {
     public void setDesc(String desc) {
         this.desc = desc;
     }
+
+    @Override
+    public String toString() {
+        return "Model{" +
+                "summary='" + summary + '\'' +
+                ", desc='" + desc + '\'' +
+                '}';
+    }
 }

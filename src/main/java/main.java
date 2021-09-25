@@ -1,8 +1,6 @@
 package src.main.java;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class main {
 
@@ -11,14 +9,11 @@ public class main {
                 Команда "Добавить" и введённый после неё текст будут добавлять новое дело в список.
                 Команда "Редактировать №" и номер дела будет заменять предыдущее описание дела на введённое новое.
                 Команда "Удалить №" и номер дела после неё - удаляет выбранное дело. В этой задаче нужно использовать коллекции List
+                Команда "Показать" и номер дела после неё
                 """);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String name = reader.readLine();
-        if (name == "Добавить") {
-            System.out.println(name);
+        Service service = new Service();
+        while (true) {
+            service.scanner();
         }
-        System.out.println(name);
-        System.out.println();
     }
 }
-
