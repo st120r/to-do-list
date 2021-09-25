@@ -13,8 +13,9 @@ public class Service {
 
     public void scanner() {
         System.out.print("Input a comm: ");
+        Scanner in = new Scanner(System.in);
 
-        switch (scan(3)) {
+        switch (in.nextLine()) {
             case "Добавить" -> {
                 LocalRepoList.addToList(scan(1), scan(2));
             }
